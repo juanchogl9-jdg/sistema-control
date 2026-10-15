@@ -1,5 +1,6 @@
+'use client';
 import { useState, useEffect } from 'react';
-import { supabase } from '../lib/supabaseClient'; // Conexión a tu BD
+import { supabase } from '@/lib/supabaseClient'; // Conexión a tu BD
 
 export default function Dashboard() {
   const [organizations, setOrganizations] = useState([]);
