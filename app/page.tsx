@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react';
 import { supabase } from '@/lib/supabaseClient'; // Conexión a tu BD
 
 export default function Dashboard() {
-  const [organizations, setOrganizations] = useState([]);
-  const [selectedOrg, setSelectedOrg] = useState(null);
-  const [controls, setControls] = useState([]);
+const [organizations, setOrganizations] = useState<any[]>([]);
+const [selectedOrg, setSelectedOrg] = useState<any>(null);
+const [controls, setControls] = useState<any[]>([]);
 
   // Cargar organizaciones autorizadas para el usuario
   useEffect(() => {
